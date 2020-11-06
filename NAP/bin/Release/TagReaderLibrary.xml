@@ -1,0 +1,131 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TagReaderLibrary
+</name>
+</assembly>
+<members>
+<member name="P:TagReaderLibrary.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TagReaderLibrary.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:TagReaderLibrary.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:TagReaderLibrary.Id3TagReader.#ctor">
+	<summary>
+ Use this constructor when the file name is passed
+ through the method.
+ </summary>
+</member><member name="M:TagReaderLibrary.Id3TagReader.#ctor(System.String)">
+	<summary>
+ Use to pass the file name without using method.
+ </summary>
+	<param name="fileName">File name to examine</param>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ReturnID3TagVersion(System.String)">
+	<summary>
+ Return an enumeration giving ID3 tag status/information
+ given the file name.
+ </summary>
+</member><member name="M:TagReaderLibrary.Id3TagReader.GetId3v1Metadata">
+	<summary>
+ Reads the metadata located in the ID3V1 tag that
+ is located in the last 128 bytes of the file.
+ </summary>
+	<returns>
+ An empty string if there are no errors; error
+ message(s) if there are.
+ </returns>
+</member><member name="M:TagReaderLibrary.Id3TagReader.GetId3v2Metadata">
+	<summary>
+ Reads the metadata contained in an ID3V2 tag.
+ </summary>
+	<returns>
+ Returns an empty string if sucessful; error
+ message(s) if not.
+ </returns>
+</member><member name="M:TagReaderLibrary.Id3TagReader.LocateFrames">
+	<summary>
+ Get the starting position of each ID3 field.
+ Fields not found will have a value of -1.
+ </summary>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ReadFrame(System.String@,System.String,System.Int32)">
+	<summary>
+ Reads an ID3 Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="frameData">text is returned by reference</param>
+	<param name="tagName">4 character frame tag, eg. "TCOP"</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ReadAttachedPictureFrame(System.Drawing.Image@,System.String,System.Int32)">
+	<summary>
+ Reads an ID3 Attached Picture (APIC) Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="picture">image is returned by reference</param>
+	<param name="tagName">4 character frame tag, eg. "TCOP"</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ReadComment(System.String@,System.Int32)">
+	<summary>
+ Reads an ID3 Comment Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="frameData">text is returned by reference</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:TagReaderLibrary.Id3TagReader.CleanUpText(System.String)">
+	<summary>
+ The purpose of this method is to remove any extraneous characters.
+ </summary>
+	<param name="textValue">Text to clean</param>
+	<returns>Cleaned text</returns>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ImageToByteArray(System.Drawing.Image)">
+	<summary>
+ Converts an image to a byte array.
+ </summary>
+</member><member name="M:TagReaderLibrary.Id3TagReader.ByteArrayToImage(System.Byte[])">
+	<summary>
+ Converts a byte array to an image.
+ </summary>
+</member><member name="T:TagReaderLibrary.Id3TagReader">
+	<summary>
+ Reads ID3v2 tags and reports values as properties.
+ </summary>
+	<remarks>
+ This was written from scratch using the documentation on
+ id3.org. Although I found a complex ID3 source (in C#) that
+ worked properly, none of the simpler code samples worked in
+ a circumstances.
+ 
+ After studying the documentation, I found the problem. ID3 tags
+ are allowed to use different text encodings in each frame. For
+ example, "TALB" might use Unicode (bigendian), "COMM" might use
+ ANSI (ASCII), and "TIT2" might use UTF-8. So the encoding has
+ to be determined each time a frame is read.
+ 
+ Comments were also a problem. Comments are a variable length frame
+ that starts with complex header that includes a variable length description
+ that can have different text encoding from the comment itself. Unicode and
+ UTF-8 comments always end in zeros. But ANSI comments have no ending
+ delimiter and the length of the comment has to be carefully calculated.
+ </remarks>
+</member><member name="T:TagReaderLibrary.TagVersion">
+	<summary>
+ Version of ID3 tag.
+ </summary>
+</member><member name="T:TagReaderLibrary.PictureType">
+	<summary>
+ Type of attached picture.
+ </summary>
+</member>
+</members>
+</doc>

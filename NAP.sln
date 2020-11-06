@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NAP", "NAP\NAP.vbproj", "{03132223-F987-48A3-9EF0-C14C813FE721}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "DNW Audio Player", "DNW Audio Player\DNW Audio Player.isproj", "{E98FA852-A25A-4468-9818-8DD4183AB180}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03132223-F987-48A3-9EF0-C14C813FE721} = {03132223-F987-48A3-9EF0-C14C813FE721}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		CD_ROM|x86 = CD_ROM|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DVD-5|Any CPU = DVD-5|Any CPU
+		DVD-5|x86 = DVD-5|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+		SingleImage|Any CPU = SingleImage|Any CPU
+		SingleImage|x86 = SingleImage|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03132223-F987-48A3-9EF0-C14C813FE721}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.CD_ROM|x86.ActiveCfg = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.CD_ROM|x86.Build.0 = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Debug|x86.ActiveCfg = Release|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Debug|x86.Build.0 = Release|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.DVD-5|x86.ActiveCfg = Debug|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.DVD-5|x86.Build.0 = Debug|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Release|x86.ActiveCfg = Release|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.Release|x86.Build.0 = Release|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{03132223-F987-48A3-9EF0-C14C813FE721}.SingleImage|x86.ActiveCfg = Release|x86
+		{03132223-F987-48A3-9EF0-C14C813FE721}.SingleImage|x86.Build.0 = Release|x86
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.CD_ROM|x86.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.CD_ROM|x86.Build.0 = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Debug|Any CPU.ActiveCfg = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Debug|Any CPU.Build.0 = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Debug|x86.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Debug|x86.Build.0 = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.DVD-5|Any CPU.Build.0 = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.DVD-5|x86.ActiveCfg = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.DVD-5|x86.Build.0 = DVD-5
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Release|Any CPU.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Release|Any CPU.Build.0 = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Release|x86.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.Release|x86.Build.0 = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.SingleImage|Any CPU.Build.0 = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.SingleImage|x86.ActiveCfg = SingleImage
+		{E98FA852-A25A-4468-9818-8DD4183AB180}.SingleImage|x86.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

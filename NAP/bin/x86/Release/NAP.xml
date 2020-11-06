@@ -1,0 +1,560 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NAP
+</name>
+</assembly>
+<members>
+<member name="M:NAP.AboutDialog.AboutForm_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+	<summary>
+ When user presses the escape key close this form.
+ </summary>
+</member><member name="M:NAP.AboutDialog.AboutForm_Load(System.Object,System.EventArgs)">
+	<summary>
+ Form Load Event - assign form level variables, fill out labels on form
+ </summary>
+</member><member name="M:NAP.AboutDialog.linkLabelEULA_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+	<summary>
+ Display EULA if user clicks on link label. Note that this is a PDF file and an
+ error will occur if  Adobe Reader is not installed on the user's computer.
+ </summary>
+</member><member name="M:NAP.AboutDialog.linkLabelEmail_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+	<summary>
+ Invoke an email message for support. If no email application is installed or running
+ on the user's computer, then an error message will be displayed.
+ </summary>
+</member><member name="M:NAP.AboutDialog.GetFrameworkShortVersion">
+	<summary>
+ Framework short version, ie: 2.0
+ </summary>
+	<returns> Returns a string with the version number, if there is an error an
+ empty string is returned. </returns>
+</member><member name="M:NAP.AboutDialog.GetFrameworkServicePack">
+	<summary>
+ A special section of the registry has to be querried to find out the service pack
+ of the .NET Framework. A different location was used for 1.0 and 1.1, but since this
+ application only runs on version 2.0, we won't worry about that.
+ </summary>
+	<returns> A string containing the version number, for example: "2.0" </returns>
+</member><member name="M:NAP.AboutDialog.ReturnHighestFrameworkVersion">
+	<summary>
+ Queries the Registry and returns the highest .NET Framework version found or 0 if none is found.
+ </summary>
+	<returns>A string indicating the major and minor version of the .NET Framework and service pack (if any).</returns>
+	<remarks>
+ This code is confirmed for versions 2.0, 3.0, 3.5 and 4.0.
+ </remarks>
+</member><member name="M:NAP.AboutDialog.GetUserCustomerOrganization">
+	<summary>
+ Query registry for information.
+ </summary>
+	<returns> Returns customer name as string. </returns>
+</member><member name="M:NAP.AboutDialog.GetUserCustomerName">
+	<summary>
+ Query registry for information.
+ </summary>
+	<returns> Returns customer organizationn as string. </returns>
+</member><member name="M:NAP.AboutDialog.GetOSUptime">
+	<summary>
+ This method gets the system up time by Imports the system clock. Most of this
+ code is used to format the output of the system timer (in milliseconds) to
+ a more useful format:  DD:HH:MM:SS.
+ 
+ Note since the system timer rolls over every 47 days, this method will return
+ an incorrect value on a system that has been up for more than 47 days.
+ 
+ This method is called by the timer.
+ </summary>
+	<returns> A formatted string containing the system up time in the format DD:HH:MM:SS </returns>
+</member><member name="M:NAP.AboutDialog.TimerTickCount_Tick(System.Object,System.EventArgs)">
+	<summary>
+ This timer is used to update the display of system up time and the date and time
+ displayed in the StatusStrip at the bottom of the form.
+ </summary>
+</member><member name="M:NAP.AboutDialog.ButtonOK_Click(System.Object,System.EventArgs)">
+	<summary>
+ This button will close the form if the form was called with ShowDialog
+ </summary>
+</member><member name="M:NAP.AboutDialog.ButtonSysInfo_Click(System.Object,System.EventArgs)">
+	<summary>
+ This button open Microsoft System Information.
+ </summary>
+</member><member name="T:NAP.AboutDialog">
+	<summary>
+ Generic About Box for use with my projects. Provides basic system information as well as
+ system up time and the current date and time. The header is a panel which my contain a
+ background image or color. A picture box (48x48 pixels) can display a custom image.
+ 
+ There are two buttons on the form, "Microsoft System Information," which starts msinfo32.exe
+ and "OK," which dismisses the form. Typing Escape on the keyboard will also dismiss the form.
+ 
+ There are two link labels. The first opens a file called "EULA.pdf" Imports the Adobe Reader that
+ is installed on the computer. The "EULA.pdf" file must reside in the application folder. The other
+ link label initiates an email to me. This is normally not visible for non-commercial applications.
+ the application folder.
+ </summary>
+	<remarks>The application will produce an error dialog if msinfo32.exe or EULA.pdf is not found.</remarks>
+	<copyright>Copyright © 2017 Nathaniel Nkrumah</copyright>
+</member><member name="T:NAP.ImageConverter">
+	<summary>
+ Description of ImageConverter.
+ </summary>
+</member><member name="M:NAP.WmfsdkFunctions.#ctor">
+	<summary>
+ No public constructor needed because all we have here is static interfaces.
+ </summary>
+</member><member name="T:NAP.WmfsdkFunctions">
+	<summary>
+ Wrapper for accessing the WMFSDK functions from a managed-code base.
+ </summary>
+</member><member name="M:NAP.MetadataCollector.#ctor">
+	<summary>
+ Used when file name is passed with method.
+ </summary>
+</member><member name="M:NAP.MetadataCollector.#ctor(System.String)">
+	<summary>
+ Used when file name is also initialized.
+ Then method is called.
+ </summary>
+	<param name="fileName">Return metadata from this file name</param>
+</member><member name="P:NAP.MetadataCollector.FileCreationTime">
+	<summary>
+ Time/Date file was created. Data type: Date.
+ </summary>
+</member><member name="P:NAP.MetadataCollector.FileFullName">
+	<summary>
+ Full file name, including path.
+ </summary>
+</member><member name="P:NAP.MetadataCollector.FileIsReadOnly">
+	<summary>
+ Indicates if file is read-only.
+ </summary>
+</member><member name="P:NAP.MetadataCollector.Attributes">
+	<summary>
+ Collection of the names of all Windows Media attributes
+ present in this file.
+ </summary>
+</member><member name="P:NAP.MetadataCollector.DataTypes">
+	<summary>
+ Collection of the data types of all of the values
+ present in this file. This, in some instances,
+ can be used to convert the strings back to the
+ original format.
+ </summary>
+</member><member name="P:NAP.MetadataCollector.Values">
+	<summary>
+ Values (as strings) for all of the attributes.
+ </summary>
+</member><member name="M:NAP.MetadataCollector.ReturnMetadata(System.String)">
+	<summary>
+ Collects and returns windows media metadata about the file.
+ </summary>
+	<param name="fileName">File name to examine</param>
+	<returns>
+ Returns an empty string; otherwise returns error information.
+ </returns>
+</member><member name="M:NAP.MetadataCollector.ReturnMetadata">
+	<summary>
+ Collects and returns windows media metadata about the file.
+ File name must be passed with new constructor.
+ </summary>
+	<returns>
+ Returns an empty string; otherwise returns error information.
+ </returns>
+</member><member name="M:NAP.MetadataCollector.TranslateAttribute(System.String,NAP.WMT_ATTR_DATATYPE,System.Byte[],System.UInt32)">
+	<summary>
+ Translates the specified attribute to string.
+ </summary>
+	<param name="attributeName">Name of attribute</param>
+	<param name="AttribDataType">Data type of attribute</param>
+	<param name="pbValue">Raw byte array value</param>
+	<param name="valueLength">Length of value</param>
+</member><member name="M:NAP.MetadataCollector.AddValuesToProperties(System.String,System.String)">
+	<summary>
+ Adds the values to the class properties. Runs for each attribute
+ after TranslateAttribute changes the byte values to string.
+ </summary>
+	<param name="attributeName">Name of the attribute</param>
+	<param name="value">Value of the attribute as a string</param>
+	<remarks>
+ Numeric  and boolean values are convert back to original data types.
+ </remarks>
+</member><member name="M:NAP.MetadataCollector.ShowAttributes(System.String,System.UInt16)">
+	<summary>
+ Displays all attributes for the specified stream.
+ </summary>
+</member><member name="T:NAP.MetadataCollector">
+	<summary>
+ Uses wrapper class from Window Media Format SDK translated from C#.
+ This class was created using a C# console application in the
+ WMFSDK as a starting point. Converted to normal class with properties,
+ public methods, and constructors. (Also to Visual Basic!)
+ </summary>
+</member><member name="M:NAP.Id3TagReader.#ctor">
+	<summary>
+ Use this constructor when the file name is passed
+ through the method.
+ </summary>
+</member><member name="M:NAP.Id3TagReader.#ctor(System.String)">
+	<summary>
+ Use to pass the file name without using method.
+ </summary>
+	<param name="fileName">File name to examine</param>
+</member><member name="M:NAP.Id3TagReader.ReturnID3TagVersion(System.String)">
+	<summary>
+ Return an enumeration giving ID3 tag status/information
+ given the file name.
+ </summary>
+</member><member name="M:NAP.Id3TagReader.GetId3v1Metadata">
+	<summary>
+ Reads the metadata located in the ID3V1 tag that
+ is located in the last 128 bytes of the file.
+ </summary>
+	<returns>
+ An empty string if there are no errors; error
+ message(s) if there are.
+ </returns>
+</member><member name="M:NAP.Id3TagReader.GetId3v2Metadata">
+	<summary>
+ Reads the metadata contained in an ID3V2 tag.
+ </summary>
+	<returns>
+ Returns an empty string if sucessful; error
+ message(s) if not.
+ </returns>
+</member><member name="M:NAP.Id3TagReader.LocateFrames">
+	<summary>
+ Get the starting position of each ID3 field.
+ Fields not found will have a value of -1.
+ </summary>
+</member><member name="M:NAP.Id3TagReader.ReadFrame(System.String@,System.String,System.Int32)">
+	<summary>
+ Reads an ID3 Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="frameData">text is returned by reference</param>
+	<param name="tagName">4 character frame tag, eg. "TCOP"</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:NAP.Id3TagReader.ReadAttachedPictureFrame(System.Drawing.Image@,System.String,System.Int32)">
+	<summary>
+ Reads an ID3 Attached Picture (APIC) Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="picture">image is returned by reference</param>
+	<param name="tagName">4 character frame tag, eg. "TCOP"</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:NAP.Id3TagReader.ReadComment(System.String@,System.Int32)">
+	<summary>
+ Reads an ID3 Comment Frame. Compares the given to the found tag name to verify the correct position.
+ Decodes the frame header to get the frame size. Reads the text encoding byte to determine
+ the correct encoding to use for this frame. (They can differ with an ID3 tag!)
+ </summary>
+	<param name="frameData">text is returned by reference</param>
+	<param name="startPosition">starting position within the ID3 tag for the frame tag</param>
+</member><member name="M:NAP.Id3TagReader.CleanUpText(System.String)">
+	<summary>
+ The purpose of this method is to remove any extraneous characters.
+ </summary>
+	<param name="textValue">Text to clean</param>
+	<returns>Cleaned text</returns>
+</member><member name="M:NAP.Id3TagReader.ImageToByteArray(System.Drawing.Image)">
+	<summary>
+ Converts an image to a byte array.
+ </summary>
+</member><member name="M:NAP.Id3TagReader.ByteArrayToImage(System.Byte[])">
+	<summary>
+ Converts a byte array to an image.
+ </summary>
+</member><member name="T:NAP.Id3TagReader">
+	<summary>
+ Reads ID3v2 tags and reports values as properties.
+ </summary>
+	<remarks>
+ This was written from scratch using the documentation on
+ id3.org. Although I found a complex ID3 source (in C#) that
+ worked properly, none of the simpler code samples worked in
+ a circumstances.
+ 
+ After studying the documentation, I found the problem. ID3 tags
+ are allowed to use different text encodings in each frame. For
+ example, "TALB" might use Unicode (bigendian), "COMM" might use
+ ANSI (ASCII), and "TIT2" might use UTF-8. So the encoding has
+ to be determined each time a frame is read.
+ 
+ Comments were also a problem. Comments are a variable length frame
+ that starts with complex header that includes a variable length description
+ that can have different text encoding from the comment itself. Unicode and
+ UTF-8 comments always end in zeros. But ANSI comments have no ending
+ delimiter and the length of the comment has to be carefully calculated.
+ </remarks>
+</member><member name="T:NAP.TagVersion">
+	<summary>
+ Version of ID3 tag.
+ </summary>
+</member><member name="T:NAP.PictureType">
+	<summary>
+ Type of attached picture.
+ </summary>
+</member><member name="P:NAP.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_PLAY1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_PLAY3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_SYS_CLOSE1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_SYS_CLOSE2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_SYS_MINIMIZE1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.BTN_SYS_MINIMIZE2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.chiudi">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.CloseMouse">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.GrayGradient">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.images_6">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.lionlogin_ipad">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.MinimizeMouse">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.Mute">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.MyMusicPlayer">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.Nathaniel1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.PausePlay">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.Play">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.SeekBeginning">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.SeekEnd">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.sound">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.StopPlay">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NAP.My.Resources.Resources.UnMute">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:NAP.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:NAP.MediaException.#ctor(System.String)">
+	<summary>Constructs a new MediaException object.</summary>
+	<param name="Message">Specifies the error message.</param>
+</member><member name="M:NAP.MediaException.#ctor">
+	<summary>Constructs a new MediaException object.</summary>
+	<remarks>The message will be set to <em>'An error occured while accessing the media file.'</em></remarks>
+</member><member name="M:NAP.MediaException.ToString">
+	<summary>Returns a string representation of this object.</summary>
+	<returns>A string representation of this MediaException.</returns>
+</member><member name="T:NAP.MediaException">
+	<summary>
+ The exception that is thrown when an error occurs while opening, playing or modifying a media file.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.#ctor(System.Int32)">
+	<summary>
+ Creates a new instance of SoundPlayer.
+ Parameter allows creation of unique instance that allow multiple files to play at once.
+ </summary>
+	<param name="instance"></param>
+</member><member name="M:NAP.MediaPlayer.Dispose">
+	<summary>
+ Dispose for this class.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Dispose(System.Boolean)">
+	<summary>
+ Called by public method to free both managed and native resources.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Disposed">
+	<summary>
+ Gets whether the object has been disposed or not.
+ </summary>
+	<value>True if the object has been disposed, false otherwise.</value>
+</member><member name="M:NAP.MediaPlayer.Finalize">
+	<summary>
+ Destructs the MediaFile object by calling the Dispose method.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.MuteAll">
+	<summary>
+ Gets mute status for both channels. Toggles mute on/off for both channels.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.MuteLeft">
+	<summary>
+ Gets mute status for left channel. Toggles mute on/off for left channel.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.MuteRight">
+	<summary>
+ Gets mute status for right channel. Toggles mute on/off for right channel.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Volume">
+	<summary>
+ Gets/Sets volume for both channels. Min = 0, Max = 1000.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.VolumeLeft">
+	<summary>
+ Gets/Sets volume for left channel. Min = 0, Max = 1000.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.VolumeRight">
+	<summary>
+ Gets/Sets volume for right channel. Min = 0, Max = 1000.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.VolumeTreble">
+	<summary>
+ Gets/Sets treble volume for both channels. Min = 0, Max = 1000.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.VolumeBass">
+	<summary>
+ Gets/Sets bass volume for both channels. Min = 0, Max = 1000.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.FileName">
+	<summary>
+ Gets current filename.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Looping">
+	<summary>
+ Gets/Sets Looping (boolean).
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Opened">
+	<summary>
+ Returns true if file is open.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Playing">
+	<summary>
+ Returns true if file is playing.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Paused">
+	<summary>
+ Returns true if file is paused.
+ </summary>
+</member><member name="P:NAP.MediaPlayer.Status">
+	<summary>
+ Gets the status of the media file.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Seek(System.Int64)">
+	<summary>
+ Seeks to position in milliseconds. Value must be less than length. File must be open.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Close">
+	<summary>
+ Closes currently open file.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Open(System.String)">
+	<summary>
+ Opens sound file given path and filename.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Play">
+	<summary>
+ Begins play or resumes from pause.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Pause">
+	<summary>
+ Toggles pause.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.StopPlay">
+	<summary>
+ Stops play of open file.
+ </summary>
+</member><member name="M:NAP.MediaPlayer.Duration">
+	<summary>
+ Gets the duration of the file.
+ </summary>
+	<returns>An integer that holds the length of the file.</returns>
+	<remarks>The length is measured in milliseconds.</remarks>
+</member><member name="M:NAP.MediaPlayer.CurrentPosition">
+	<summary>
+ Returns the position in the media file.
+ </summary>
+	<returns>An integer that specifies the position in the media file.</returns>
+	<exception cref="T:NAP.MediaException">An error occured while accessing the media.</exception>
+	<remarks>The position is measured in milliseconds.</remarks>
+</member><member name="M:NAP.MediaPlayer.GetMciError(System.Int32)">
+	<summary>
+ Converts an MCI error code into a string.
+ </summary>
+	<param name="errorCode">The error code to convert.</param>
+	<returns>A string representation of the specified error code -or- an empty string (="") when an error occurs.</returns>
+</member><member name="M:NAP.NativeMethods.mciSendString(System.String,System.Text.StringBuilder,System.Int32,System.IntPtr)">
+	<summary>
+ The mciSendString function sends a command string to an MCI device. The device that the command is sent to is specified in the command string.
+ </summary>
+	<param name="lpstrCommand">Address of a null-terminated string that specifies an MCI command string.</param>
+	<param name="lpstrReturnString">Address of a buffer that receives return information. If no return information is needed, this parameter can be null (Nothing in VB.NET).</param>
+	<param name="uReturnLength">Size, in characters, of the return buffer specified by the lpszReturnString parameter.</param>
+	<param name="hwndCallback">Handle of a callback window if the notify flag was specified in the command string.</param>
+	<returns>Returns zero if successful or an error otherwise. The low-order word of the returned doubleword value contains the error return value. If the error is device-specific, the high-order word of the return value is the driver identifier; otherwise, the high-order word is zero.<br>To retrieve a text description of mciSendString return values, pass the return value to the mciGetErrorString function.</br></returns>
+</member><member name="M:NAP.NativeMethods.mciGetErrorString(System.Int32,System.Text.StringBuilder,System.Int32)">
+	<summary>
+ The mciGetErrorString function retrieves a string that describes the specified MCI error code.
+ </summary>
+	<param name="dwError">Error code returned by the mciSendCommand or mciSendString function.</param>
+	<param name="lpstrBuffer">Address of a buffer that receives a null-terminated string describing the specified error.</param>
+	<param name="uLength">Length of the buffer, in characters, pointed to by the lpszErrorText parameter.</param>
+	<returns>Returns TRUE if successful or FALSE if the error code is not known.</returns>
+</member><member name="M:NAP.NativeMethods.WMCreateEditor(NAP.IWMMetadataEditor@)">
+	<summary>
+ Just for the compiler.
+ </summary>
+</member>
+</members>
+</doc>

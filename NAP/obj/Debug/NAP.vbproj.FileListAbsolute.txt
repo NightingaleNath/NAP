@@ -1,0 +1,94 @@
+C:\Users\user\AppData\Local\Temporary Projects\NAP\bin\Debug\NAP.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\NAP.exe.config
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\NAP.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\NAP.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\NAP.xml
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\ActiproSoftware.Shared.Net20.dll
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.MainForm.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.Resources.resources
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.vbproj.GenerateResource.Cache
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.exe
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.xml
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.pdb
+C:\Users\user\Documents\Visual Studio 2012\Projects\NAP\NAP\obj\Debug\NAP.AboutDialog.resources
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\NAP.exe.config
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.exe
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.xml
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.pdb
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\NAP.exe
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\NAP.pdb
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\NAP.xml
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\ActiproSoftware.Shared.Net20.dll
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.AboutDialog.resources
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.MainForm.resources
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.Resources.resources
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.vbproj.GenerateResource.Cache
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\Interop.WMPLib.dll
+D:\Items\CODES (VB)\NAP\NAP\bin\Debug\AxInterop.WMPLib.dll
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\Interop.WMPLib.dll
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\AxInterop.WMPLib.dll
+D:\Items\CODES (VB)\NAP\NAP\obj\Debug\NAP.vbproj.ResolveComReference.cache
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\NAP.exe.config
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\Interop.WMPLib.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.vbproj.ResolveComReference.cache
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.exe
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.xml
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.pdb
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\NAP.exe
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\NAP.pdb
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\NAP.xml
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\ActiproSoftware.Shared.Net20.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\ColorSlider.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\FastColoredTextBox.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\TagReaderLibrary.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\TagReaderLibrary.pdb
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\TagReaderLibrary.xml
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\Interop.WMPLib.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.vbprojResolveAssemblyReference.cache
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.AboutDialog.resources
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.MainForm.resources
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.Resources.resources
+C:\Users\Richard\Desktop\CODES (VB)\NAP\NAP\obj\Debug\NAP.vbproj.GenerateResource.Cache
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\NAP.exe.config
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\Interop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.vbproj.ResolveComReference.cache
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.exe
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.xml
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.pdb
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\NAP.exe
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\NAP.pdb
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\NAP.xml
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\ActiproSoftware.Shared.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\ColorSlider.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\FastColoredTextBox.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\WindowsMediaMetadata.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\WmfsdkWrapper.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\TagReaderLibrary.pdb
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\TagReaderLibrary.xml
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\Interop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.vbprojResolveAssemblyReference.cache
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.AboutDialog.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.MainForm.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.Resources.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Debug\NAP.vbproj.GenerateResource.Cache
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.exe.config
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.exe
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.pdb
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.xml
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ActiproSoftware.Shared.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ColorSlider.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\FastColoredTextBox.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\WindowsMediaMetadata.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\WmfsdkWrapper.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\Interop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\AxInterop.WMPLib.dll

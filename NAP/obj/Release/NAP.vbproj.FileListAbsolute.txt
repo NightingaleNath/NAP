@@ -1,0 +1,52 @@
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.exe.config
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\Interop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\AxInterop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.vbproj.ResolveComReference.cache
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.exe
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.pdb
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\NAP.xml
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ActiproSoftware.Shared.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ActiproSoftware.WinUICore.Net20.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\ColorSlider.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\FastColoredTextBox.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\WindowsMediaMetadata.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\WmfsdkWrapper.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\Interop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\bin\Release\AxInterop.WMPLib.dll
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.vbprojResolveAssemblyReference.cache
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.AboutDialog.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.MainForm.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.Resources.resources
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.vbproj.GenerateResource.Cache
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.exe
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.xml
+C:\Users\hi\Desktop\NAP\NAP\obj\Release\NAP.pdb
+H:\CODES (VB)\NAP\NAP\bin\Release\NAP.exe.config
+H:\CODES (VB)\NAP\NAP\obj\Release\Interop.WMPLib.dll
+H:\CODES (VB)\NAP\NAP\obj\Release\AxInterop.WMPLib.dll
+H:\CODES (VB)\NAP\NAP\obj\Release\NAP.vbproj.ResolveComReference.cache
+H:\CODES (VB)\NAP\NAP\obj\Release\NAP.exe
+H:\CODES (VB)\NAP\NAP\obj\Release\NAP.xml
+H:\CODES (VB)\NAP\NAP\obj\Release\NAP.pdb
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\NAP.exe.config
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\Interop.WMPLib.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\AxInterop.WMPLib.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.vbproj.ResolveComReference.cache
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.exe
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.xml
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.pdb
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\NAP.exe
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\NAP.pdb
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\NAP.xml
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\ActiproSoftware.Shared.Net20.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\ActiproSoftware.WinUICore.Net20.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\Interop.WMPLib.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\AxInterop.WMPLib.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.vbprojResolveAssemblyReference.cache
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.AboutDialog.resources
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.MainForm.resources
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.Resources.resources
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\obj\Release\NAP.vbproj.GenerateResource.Cache
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\TagReaderLibrary.dll
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\TagReaderLibrary.pdb
+D:\Nightingale\VB\CODES (VB)\NAP\NAP\bin\Release\TagReaderLibrary.xml
